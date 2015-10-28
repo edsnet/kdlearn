@@ -63,7 +63,7 @@ error_reporting(E_ALL);
 try
 {
   // pay attention to the ":" at the end...
-    $db = new PDO("ssqlite::memory:");
+    $db = new PDO("sqlite::memory:");
     echo "SQLite created in memory.";
   // create a new table in memory 
     $stmt = $db->exec('CREATE TABLE test (id INT, text STRING)'); 
